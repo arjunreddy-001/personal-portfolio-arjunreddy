@@ -7,8 +7,8 @@ To open this project in your computer, clone or download this project from this 
 ![HTML](https://pics.freeicons.io/uploads/icons/png/8804286661557996995-48.png)
 ![CSS](https://pics.freeicons.io/uploads/icons/png/16738931111536080149-48.png)
 ![SASS](https://pics.freeicons.io/uploads/icons/png/6655067911551942823-48.png)
-![JavaScript](https://pics.freeicons.io/uploads/icons/png/13691885491579517854-48.png)
-![TypeScript](https://pics.freeicons.io/uploads/icons/png/14016183671580802975-48.png)
+![JavaScript](https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-48.png)
+![TypeScript](https://cdn.icon-icons.com/icons2/2107/PNG/48/file_type_typescript_official_icon_130107.png)
 ![React](https://pics.freeicons.io/uploads/icons/png/20167174151551942641-48.png)
 ![Jest](https://pics.freeicons.io/uploads/icons/png/5894313931548218185-48.png)
 
