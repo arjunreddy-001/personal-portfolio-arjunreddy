@@ -1,6 +1,9 @@
 import styles from "./Navbar.module.scss";
-import { NavLink } from "react-router-dom";
 import NavItem from "./NavItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
+const downloadIcon = <FontAwesomeIcon icon={faDownload} />;
 
 const Navbar: React.FC = () => {
   return (
@@ -14,11 +17,11 @@ const Navbar: React.FC = () => {
             <NavItem to="/projects" text="Projects" />
             <NavItem to="/contact" text="Contact" />
           </ul>
-
-          <button type="button" className={styles["btn-download"]}>
-            Download CV
-          </button>
         </div>
+        <button type="button" className={styles["btn-download"]}>
+          <span className={styles["btn-text"]}>Download CV</span>
+          <span className={styles["btn-icon"]}>{downloadIcon}</span>
+        </button>
       </div>
     </nav>
   );

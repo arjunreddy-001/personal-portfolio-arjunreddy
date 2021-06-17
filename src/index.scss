@@ -9,6 +9,10 @@
   --primary-color: #ffd369;
   --secondary-color: #393e46;
   --font-color: #222831;
+  --white: #f0f0f0;
+
+  --primary-color-dark: #f3c65e;
+  --primary-color-darker: #e2b754;
 }
 
 html {
@@ -71,7 +75,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--font-color);
+  color: inherit;
 }
 
 img {

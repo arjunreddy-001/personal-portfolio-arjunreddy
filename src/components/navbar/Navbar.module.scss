@@ -1,9 +1,11 @@
 .navbar {
-  height: 8rem;
+  height: 9rem;
   position: fixed;
   width: 100%;
   z-index: 10;
-  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--white);
 }
 
 .navbar-content-wrapper {
@@ -17,6 +19,16 @@
   .navbar-logo {
     font-size: 3rem;
     font-weight: 700;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1.5rem;
+      height: 100%;
+      width: 1rem;
+      background-color: var(--primary-color);
+    }
   }
 
   .navs {
@@ -30,9 +42,39 @@
   }
 
   .btn-download {
-    padding: 0.5rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
     text-transform: uppercase;
     margin-left: 3rem;
+    height: 4.3rem;
     cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+
+    &:hover {
+      background-color: var(--primary-color-dark);
+    }
+
+    &:active {
+      background-color: var(--primary-color-darker);
+    }
+
+    .btn-text,
+    .btn-icon {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 1.5rem;
+      height: 100%;
+    }
+
+    .btn-icon {
+      background-color: rgba(0, 0, 0, 0.08);
+    }
   }
 }
