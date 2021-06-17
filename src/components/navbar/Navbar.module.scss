@@ -22,22 +22,17 @@
   .navs {
     display: flex;
     align-items: center;
+    position: relative;
 
-    .nav-links {
+    .nav {
       display: flex;
-    }
-
-    .nav-links li {
-      margin-right: 2.5rem;
-    }
-
-    .nav-active {
-      font-weight: bold;
     }
   }
 
   .btn-download {
     padding: 0.5rem 1.5rem;
     text-transform: uppercase;
+    margin-left: 3rem;
+    cursor: pointer;
   }
 }
