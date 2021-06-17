@@ -8,7 +8,7 @@ const HomePage = React.lazy(() => import("./pages/HomePage"));
 const AboutPage = React.lazy(() => import("./pages/AboutPage"));
 const ProjectsPage = React.lazy(() => import("./pages/ProjectsPage"));
 const ContactPage = React.lazy(() => import("./pages/ContactPage"));
-const NotFoundPage = React.lazy(() => import("./pages/404"));
+const NotFoundPage = React.lazy(() => import("./pages/NotFoundPage"));
 
 function App() {
   return (

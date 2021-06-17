@@ -1,0 +1,15 @@
+.page-not-found {
+  height: calc(100vh - var(--nav-height));
+  display: grid;
+  align-content: center;
+  justify-content: center;
+
+  .page-not-found-img {
+    max-width: 60rem;
+  }
+
+  .page-not-found-text {
+    text-align: center;
+    font-size: 5rem;
+  }
+}
