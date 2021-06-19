@@ -10,7 +10,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background: var(--primary-color);
-  border-radius: 50px;
 }
 
 body::-webkit-scrollbar-track {
@@ -54,7 +53,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--body-font);
   color: var(--font-color);
   font-size: 1.8rem;
   line-height: 1.4;
@@ -69,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--headers-font);
 }
 
 ul {
@@ -84,7 +83,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 

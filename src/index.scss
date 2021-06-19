@@ -10,9 +10,18 @@
   --primary-color-dark: #f3c65e;
   --primary-color-darker: #e2b754;
 
+  /* height & width */
   --nav-height: 9rem;
   --footer-height: 6rem;
   --footer-height-negative: -6rem;
-
   --wrapper-width: 70%;
+
+  /* font and typography */
+  --body-font: "Noto Sans", sans-serif;
+  --headers-font: "Poppins", sans-serif;
+
+  /* z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
