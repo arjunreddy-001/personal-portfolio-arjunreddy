@@ -11,22 +11,27 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles["footer"]}>
       <div className={styles["footer-content-wrapper"]}>
-        <div>
-          {copyrightIcon}
-          2021 Arjun Reddy. All rights reserved.
+        <div className={styles["footer-copyright"]}>
+          {copyrightIcon} 2021 Arjun Reddy. All rights reserved.
         </div>
         <div className={styles["footer-link"]}>
-          {emailIcon}
-          <a href="mailto: contact@arjunreddy.in">contact@arjunreddy.in</a>
+          <a href="mailto: contact@arjunreddy.in">
+            {emailIcon}
+            <span className={`${styles["text"]} ${styles["email"]}`}>
+              contact@arjunreddy.in
+            </span>
+          </a>
         </div>
         <div className={styles["footer-link"]}>
-          {linkedInIcon}
           <a
             href="https://linkedin.com/in/arjun-reddy"
             target="_blank"
             rel="noreferrer"
           >
-            Connect with me
+            {linkedInIcon}
+            <span className={`${styles["text"]} ${styles["linkedin"]}`}>
+              Connect with me
+            </span>
           </a>
         </div>
       </div>
