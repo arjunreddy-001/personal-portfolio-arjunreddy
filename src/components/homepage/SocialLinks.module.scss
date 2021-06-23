@@ -1,0 +1,15 @@
+.social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+  justify-items: center;
+
+  .social-icon {
+    font-size: 3rem;
+    transition: all 0.2s ease;
+  }
+
+  .social-icon:hover {
+    color: var(--primary-color);
+  }
+}

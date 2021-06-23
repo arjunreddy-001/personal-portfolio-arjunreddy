@@ -8,3 +8,10 @@
   width: var(--wrapper-width);
   margin: 0 auto;
 }
+
+.social-links {
+  position: fixed;
+  left: 20px;
+  top: 40%;
+  z-index: 100;
+}
