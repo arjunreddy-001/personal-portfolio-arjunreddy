@@ -1,0 +1,152 @@
+.home-container {
+
+  .home-content {
+    display: flex;
+    padding-top: 3.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: calc(90vh - var(--nav-height));
+
+    @media screen and (max-width: 970px) {
+      flex-direction: column-reverse;
+    }
+
+    .data {
+      display: flex;
+      justify-content:center;
+      flex-direction: column;
+      
+
+      .title, .subtitle {
+        display: inline-block;
+        margin: 0;
+      }
+
+      .title {
+        font-size: 6rem;
+
+        @media screen and (max-width: 1500px) {
+          font-size: 5rem;
+        }
+
+        @media screen and (max-width: 1400px) {
+          font-size: 4rem;
+        }
+
+        @media screen and (max-width: 970px) {
+          font-size: 5rem;
+        }
+
+        @media screen and (max-width: 636px) {
+          font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: 573px) {
+          font-size: 4rem;
+        }
+
+        @media screen and (max-width: 406px) {
+          font-size: 3.5rem;
+        }
+
+        .hi {
+          @media screen and (max-width: 1500px) {
+            display:block;
+          }
+
+          @media screen and (max-width: 970px) {
+            display:inline;
+          }
+
+          @media screen and (max-width: 509px) {
+            display:block;
+          }
+        }
+      }
+
+      .subtitle {
+        font-weight: 500;
+        line-height: 3rem;
+      }
+
+      .link-to-about {
+        margin-top: 3rem;
+      }
+
+      .link-to-about:hover {
+        margin-top: 3rem;
+      }
+
+      .link-to-about-text:hover {
+        text-decoration: underline;
+      }
+
+      .link-to-about-icon {
+        display: inline-block;
+        font-weight: 400;
+        margin-left: 0.75rem;
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .link-to-about-icon:hover {
+        transform: translateX(7px);
+      }
+
+      .link-to-about-text:hover ~ .link-to-about-icon {
+        transform: translateX(7px);
+      }
+
+      .link-to-about-text:active ~ .link-to-about-icon {
+        transform: translateX(150px);
+      }
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .blob {
+      width: 450px;
+      fill: var(--primary-color);
+
+      @media screen and (max-width: 1500px) {
+        width: 400px;
+      }
+
+      @media screen and (max-width: 1400px) {
+        width: 350px;
+      }
+
+      @media screen and (max-width: 1400px) {
+        width: 280px;
+      }
+
+      @media screen and (max-width: 970px) {
+        width: 350px;
+      }
+
+      @media screen and (max-width: 636px) {
+        width: 320px;
+      }
+
+      @media screen and (max-width: 573px) {
+        width: 300px;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 250px;
+      }
+
+      @media screen and (max-width: 406px) {
+        width: 220px;
+      }
+    }
+
+    .blob-img {
+      width: 170px;
+    }
+  }
+}
