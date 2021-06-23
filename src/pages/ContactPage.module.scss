@@ -1,0 +1,113 @@
+.contact-section {
+  height: calc(90vh - var(--nav-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contact-container {
+    width: 500px;
+  }
+
+  .contact-title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 0;
+  }
+
+  .contact-subtitle {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .contact-form {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .contact-inputs {
+    display: grid;
+    gap: 1.5rem;
+
+    .contact-content {
+      background-color: var(--bg-color-primary);
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem 0.25rem;
+
+      .contact-label {
+        font-size: 1.3rem;
+      }
+
+      input {
+        height: 2.5rem;
+      }
+
+      .contact-input {
+        width: 100%;
+        background-color: var(--bg-color-primary);
+        border: none;
+        outline: none;
+        padding: 0.25rem 0.5rem 0.5rem 0;
+      }
+    }
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+
+  .btn-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    height: 5rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+
+    &:hover {
+      background-color: var(--primary-color-dark);
+    }
+
+    &:active {
+      background-color: var(--primary-color-darker);
+    }
+
+    .btn-text,
+    .btn-icon {
+      display: inline-flex;
+      align-items: center;
+      height: 100%;
+      font-weight: 500;
+    }
+
+    .btn-icon {
+      display: inline-block;
+      transform: translateX(0px);
+      padding-left: 1rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn-text:hover {
+      text-shadow: 0px 0px 1px var(--font-color);
+    }
+
+    .btn-text:hover ~ .btn-icon {
+      transform: translateX(10px);
+    }
+
+    .btn-icon svg {
+      height: 100%;
+    }
+  }
+}
+
+.btn-container:hover ~ .btn-icon {
+  transform: translateX(157px);
+}

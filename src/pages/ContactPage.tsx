@@ -1,8 +1,75 @@
+import { useRef } from "react";
+import styles from "./ContactPage.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faAngleDoubleRight} from "@fortawesome/free-solid-svg-icons";
+import { FormEvent } from "react";
+
+const rightArrowIcon = <FontAwesomeIcon icon={faAngleDoubleRight} />;
+
 const ContactPage: React.FC = () => {
+
+  const nameRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+
+  const sendMessageHandler = (event: FormEvent) => {
+    event.preventDefault();
+    console.log(nameRef.current?.value);
+    console.log(emailRef.current?.value);
+    console.log(messageRef.current?.value);
+
+    nameRef.current!.value = "";
+    emailRef.current!.value = "";
+    messageRef.current!.value = "";
+  }
+
   return (
-    <div>
-      <h1>Contact Page</h1>
-    </div>
+    <section className={styles["contact-section"]}>
+      <div className={styles["contact-container"]}>
+        <h2 className={styles["contact-title"]}>Contact Me</h2>
+        <div className={styles["contact-subtitle"]}>Get in touch</div>
+
+        <form onSubmit={sendMessageHandler} className={styles["contact-form"]}>
+          <div className={styles["contact-inputs"]}>
+
+            <div className={styles["contact-content"]}>
+              <label htmlFor="name" className={styles["contact-label"]}>
+                Name
+              </label>
+              <input type="text" ref={nameRef} id="name" className={styles["contact-input"]} required/>
+            </div>
+
+            <div className={styles["contact-content"]}>
+              <label htmlFor="email" className={styles["contact-label"]}>
+                Email
+              </label>
+              <input type="email" ref={emailRef} id="email" className={styles["contact-input"]} required/>
+            </div>
+
+            <div className={styles["contact-content"]}>
+              <label htmlFor="message" className={styles["contact-label"]}>
+                Message
+              </label>
+              <textarea
+                ref={messageRef}
+                id="message"
+                cols={0}
+                rows={7}
+                className={styles["contact-input"]}
+                required
+              />
+            </div>
+          </div>
+
+          <div className={styles["btn-container"]}>
+            <button type="submit" className={styles["btn-download"]}>
+              <span className={styles["btn-text"]}>Send Message</span>
+              <span className={styles["btn-icon"]}>{rightArrowIcon}</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
   );
 };
 
