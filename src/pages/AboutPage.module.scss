@@ -1,0 +1,118 @@
+.about-section {
+  height: calc(90vh - var(--nav-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.subtitle {
+  margin-bottom: 6rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 30%;
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-self: center;
+
+    @media screen and (max-width: 1200px) {
+      width: 35%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 50%;
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 636px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 573px) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 80%;
+    }
+  }
+
+  .about-data {
+    width: 60%;
+
+    @media screen and (max-width: 1200px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 75%;
+    }
+
+    @media screen and (max-width: 636px) {
+      width: 100%;
+    }
+
+    .about-description {
+      font-size: 2rem;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    .link-to-projects {
+      display: block;
+      margin-top: 3rem;
+    }
+
+    .link-to-projects-text {
+      @media screen and (max-width: 1200px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    .link-to-projects-text:hover {
+      text-decoration: underline;
+    }
+
+    .link-to-projects-icon {
+      display: inline-block;
+      font-weight: 400;
+      margin-left: 0.75rem;
+      transform: translateX(0);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .link-to-projects-icon:hover {
+      transform: translateX(7px);
+    }
+
+    .link-to-projects-text:hover ~ .link-to-projects-icon {
+      transform: translateX(7px);
+    }
+
+    .link-to-projects-text:active ~ .link-to-projects-icon {
+      transform: translateX(150px);
+    }
+  }
+}
+
+
+
+
