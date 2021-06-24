@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./HomePage.module.scss";
 import homeImg from "../assets/images/perfil.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const rightArrowIcon = <FontAwesomeIcon icon={faArrowRight} />;
 
@@ -11,14 +11,18 @@ const HomePage: React.FC = () => {
     <div className={styles["home-container"]}>
       <div className={styles["home-content"]}>
         <div className={styles["data"]}>
-          <h1 className={styles["title"]}><span className={styles["hi"]}>Hi,</span> I'm Arjun Reddy</h1>
-          <h3 className={styles["subtitle"]}>Frontend developer</h3>
+          <h1 className={styles["title"]}>
+            <span className={styles["hi"]}>Hi,</span> I'm Arjun Reddy
+          </h1>
+          <h2 className={styles["subtitle"]}>Frontend developer</h2>
           <Link to="/about" className={styles["link-to-about"]}>
             <span className={styles["link-to-about-text"]}>more about me</span>
-            <span className={styles["link-to-about-icon"]}>{rightArrowIcon}</span>
+            <span className={styles["link-to-about-icon"]}>
+              {rightArrowIcon}
+            </span>
           </Link>
         </div>
-        
+
         <div className={styles["image"]}>
           <svg
             className={styles["blob"]}
@@ -50,8 +54,6 @@ const HomePage: React.FC = () => {
             </g>
           </svg>
         </div>
-
-        
       </div>
     </div>
   );

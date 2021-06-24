@@ -21,6 +21,7 @@ const SocialLinks: React.FC = () => {
           href="https://www.linkedin.com/in/arjun-reddy/"
           target="_blank"
           rel="noreferrer"
+          aria-label="LinkedIn"
         >
           {linkedInIcon}
         </a>
@@ -30,6 +31,7 @@ const SocialLinks: React.FC = () => {
           href="https://github.com/arjunreddy-001"
           target="_blank"
           rel="noreferrer"
+          aria-label="GitHub"
         >
           {githubIcon}
         </a>
@@ -39,15 +41,20 @@ const SocialLinks: React.FC = () => {
           href="https://codepen.io/arjunreddy001"
           target="_blank"
           rel="noreferrer"
+          aria-label="Code Pen"
         >
           {codepenIcon}
         </a>
       </div>
       <div className={styles["social-icon"]}>
-        <a href="mailto: contact@arjunreddy.in">{emailIcon}</a>
+        <a href="mailto: contact@arjunreddy.in" aria-label="Email">
+          {emailIcon}
+        </a>
       </div>
       <div className={styles["social-icon"]}>
-        <a href="/download">{downloadIcon}</a>
+        <a href="/download" aria-label="Download Resume">
+          {downloadIcon}
+        </a>
       </div>
     </div>
   );

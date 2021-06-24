@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           {copyrightIcon} 2021 Arjun Reddy. All rights reserved.
         </div>
         <div className={styles["footer-link"]}>
-          <a href="mailto: contact@arjunreddy.in">
+          <a href="mailto: contact@arjunreddy.in" aria-label="email">
             {emailIcon}
             <span className={`${styles["text"]} ${styles["email"]}`}>
               contact@arjunreddy.in
@@ -27,6 +27,7 @@ const Footer: React.FC = () => {
             href="https://linkedin.com/in/arjun-reddy"
             target="_blank"
             rel="noreferrer"
+            aria-label="linkedin"
           >
             {linkedInIcon}
             <span className={`${styles["text"]} ${styles["linkedin"]}`}>

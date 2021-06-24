@@ -34,6 +34,11 @@
     --footer-height: 5.5rem;
   }
 
+  @media screen and (max-height: 350px) {
+    --nav-height: 8rem;
+    --footer-height: 5.5rem;
+  }
+
   @media screen and (max-width: 350px) {
     --title-font-size: 3.5rem;
     --subtitle-font-size: 1.7rem;
@@ -44,6 +49,11 @@
     --footer-height: 5.5rem;
     --title-font-size: 3rem;
     --subtitle-font-size: 1.5rem;
+  }
+
+  @media screen and (max-height: 280px) {
+    --nav-height: 7rem;
+    --footer-height: 5.5rem;
   }
 }
 

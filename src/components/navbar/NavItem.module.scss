@@ -53,7 +53,7 @@
   }
 
   .nav-active {
-    text-shadow: 0px 0px 2px var(--primary-color);
+    font-weight: 600;
     color: var(--primary-color);
 
     &::after {

@@ -9,7 +9,7 @@ const NavItem: React.FC<{
   onNavLinkClick: () => void;
 }> = ({ to, text, icon, onNavLinkClick }) => {
   return (
-    <li className={styles["nav-item"]}>
+    <li className={styles["nav-item"]} aria-label={text}>
       <NavLink
         to={to}
         exact

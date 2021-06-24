@@ -48,27 +48,37 @@ const Navbar: React.FC = () => {
               icon={homeIcon}
               onNavLinkClick={closeNav}
             />
+
             <NavItem
               to="/about"
               text="About"
               icon={aboutIcon}
               onNavLinkClick={closeNav}
             />
+
             <NavItem
               to="/projects"
               text="Projects"
               icon={portfolioIcon}
               onNavLinkClick={closeNav}
             />
+
             <NavItem
               to="/contact"
               text="Contact"
               icon={contactIcon}
               onNavLinkClick={closeNav}
             />
-            <div className={styles["nav-close"]} onClick={closeNav}>
-              {closeIcon}
-            </div>
+
+            <li>
+              <div
+                className={styles["nav-close"]}
+                onClick={closeNav}
+                aria-label="close navigation"
+              >
+                {closeIcon}
+              </div>
+            </li>
           </ul>
           <div className={styles["btn-container"]}>
             <button type="button" className={styles["btn-download"]}>
