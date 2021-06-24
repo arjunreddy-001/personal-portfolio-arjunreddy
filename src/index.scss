@@ -21,8 +21,32 @@
   --body-font: "Noto Sans", sans-serif;
   --headers-font: "Poppins", sans-serif;
 
+  --title-font-size: 4rem;
+  --subtitle-font-size: 2rem;
+
   /* z-index */
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+
+  @media screen and (max-width: 509px) {
+    --nav-height: 8rem;
+    --footer-height: 5.5rem;
+  }
+
+  @media screen and (max-width: 350px) {
+    --title-font-size: 3.5rem;
+    --subtitle-font-size: 1.7rem;
+  }
+
+  @media screen and (max-width: 325px) {
+    --nav-height: 7rem;
+    --footer-height: 5.5rem;
+    --title-font-size: 3rem;
+    --subtitle-font-size: 1.5rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }

@@ -1,19 +1,21 @@
 import styles from "./Layout.module.scss";
 import Navbar from "../navbar/Navbar";
-import SocialLinks from "../../components/homepage/SocialLinks";
+import SocialLinks from "./SocialLinks";
 import Footer from "../footer/Footer";
 
 const Layout: React.FC = (props) => {
   return (
     <div>
-      <Navbar />
       <div className={styles["social-links"]}>
-          <SocialLinks />
+        <SocialLinks />
       </div>
-      <div className={styles["main-content"]}>
-        <div className={styles["main-content-wrapper"]}>{props.children}</div>
+      <div className="layout">
+        <Navbar />
+        <main className={styles["main-content"]}>
+          <div className={styles["main-content-wrapper"]}>{props.children}</div>
+        </main>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

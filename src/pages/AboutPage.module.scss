@@ -1,25 +1,27 @@
 .about-section {
-  height: calc(90vh - var(--nav-height));
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: var(--title-font-size);
   margin: 0;
 }
 
 .subtitle {
   margin-bottom: 6rem;
+  font-size: var(--subtitle-font-size);
 }
 
 .about-container {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
@@ -112,7 +114,3 @@
     }
   }
 }
-
-
-
-

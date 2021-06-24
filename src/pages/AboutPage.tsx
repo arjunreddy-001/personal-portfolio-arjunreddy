@@ -3,14 +3,13 @@ import styles from "./AboutPage.module.scss";
 import aboutImage from "../assets/images/about.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const rightArrowIcon = <FontAwesomeIcon icon={faArrowRight} />;
 
 const AboutPage: React.FC = () => {
   return (
     <section className={styles["about-section"]}>
-
       <h2 className={styles["title"]}>About Me</h2>
       <span className={styles["subtitle"]}>My Introduction</span>
 
@@ -26,8 +25,12 @@ const AboutPage: React.FC = () => {
           </p>
 
           <Link to="/projects" className={styles["link-to-projects"]}>
-            <span className={styles["link-to-projects-text"]}>view my projects</span>
-            <span className={styles["link-to-projects-icon"]}>{rightArrowIcon}</span>
+            <span className={styles["link-to-projects-text"]}>
+              view my projects
+            </span>
+            <span className={styles["link-to-projects-icon"]}>
+              {rightArrowIcon}
+            </span>
           </Link>
         </div>
       </div>

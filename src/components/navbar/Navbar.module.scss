@@ -46,6 +46,10 @@
     @media screen and (max-width: 992px) {
       font-size: 3.5rem;
     }
+
+    @media screen and (max-width: 325px) {
+      font-size: 2.5rem;
+    }
   }
 
   .navs {
@@ -88,7 +92,7 @@
     @media screen and (max-width: 992px) {
       display: block;
       position: fixed;
-      top: -100%;
+      top: -120%;
       left: 0;
       right: 0;
       width: 100vw;

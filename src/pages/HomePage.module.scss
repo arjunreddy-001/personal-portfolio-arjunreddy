@@ -1,12 +1,11 @@
 .home-container {
-
   .home-content {
     display: flex;
-    padding-top: 3.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: calc(90vh - var(--nav-height));
 
     @media screen and (max-width: 970px) {
       flex-direction: column-reverse;
@@ -14,11 +13,11 @@
 
     .data {
       display: flex;
-      justify-content:center;
+      justify-content: center;
       flex-direction: column;
-      
 
-      .title, .subtitle {
+      .title,
+      .subtitle {
         display: inline-block;
         margin: 0;
       }
@@ -52,15 +51,15 @@
 
         .hi {
           @media screen and (max-width: 1500px) {
-            display:block;
+            display: block;
           }
 
           @media screen and (max-width: 970px) {
-            display:inline;
+            display: inline;
           }
 
           @media screen and (max-width: 509px) {
-            display:block;
+            display: block;
           }
         }
       }
@@ -126,9 +125,10 @@
 
       @media screen and (max-width: 970px) {
         width: 350px;
+        margin-bottom: 3rem;
       }
 
-      @media screen and (max-width: 636px) {
+      @media screen and (max-width: 750px) {
         width: 320px;
       }
 
