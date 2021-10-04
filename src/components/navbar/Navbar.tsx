@@ -81,10 +81,16 @@ const Navbar: React.FC = () => {
             </li>
           </ul>
           <div className={styles["btn-container"]}>
-            <button type="button" className={styles["btn-download"]}>
-              <span className={styles["btn-text"]}>Download CV</span>
-              <span className={styles["btn-icon"]}>{downloadIcon}</span>
-            </button>
+            <a
+              href="https://drive.google.com/file/d/1mFDGTOZtZKayXzuTDxvhiVOiguWVlmvo/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button type="button" className={styles["btn-download"]}>
+                <span className={styles["btn-text"]}>Download CV</span>
+                <span className={styles["btn-icon"]}>{downloadIcon}</span>
+              </button>
+            </a>
           </div>
         </div>
 

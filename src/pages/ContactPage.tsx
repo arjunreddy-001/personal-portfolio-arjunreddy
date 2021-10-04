@@ -1,8 +1,9 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import styles from "./ContactPage.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import { FormEvent } from "react";
+import { setTimeout } from "timers";
 
 const rightArrowIcon = <FontAwesomeIcon icon={faAngleDoubleRight} />;
 
@@ -11,8 +12,12 @@ const ContactPage: React.FC = () => {
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
+  const [submitBtnText, setSubmitBtnText] = useState("Send Message");
+  const [isMessageSending, setIsMessageSending] = useState(false);
+
   const sendMessageHandler = (event: FormEvent) => {
     event.preventDefault();
+    setIsMessageSending(true);
 
     const url = "https://formsubmit.co/ajax/b7c8a12cd083761a2f44481ad4834437";
 
@@ -39,6 +44,11 @@ const ContactPage: React.FC = () => {
     nameRef.current!.value = "";
     emailRef.current!.value = "";
     messageRef.current!.value = "";
+
+    setIsMessageSending(false);
+    setSubmitBtnText("Message Sent");
+
+    setTimeout(() => setSubmitBtnText("Send Message"), 5000);
   };
 
   return (
@@ -92,7 +102,9 @@ const ContactPage: React.FC = () => {
 
           <div className={styles["btn-container"]}>
             <button type="submit" className={styles["btn-download"]}>
-              <span className={styles["btn-text"]}>Send Message</span>
+              <span className={styles["btn-text"]}>
+                {isMessageSending ? "Sending..." : submitBtnText}
+              </span>
               <span className={styles["btn-icon"]}>{rightArrowIcon}</span>
             </button>
           </div>
